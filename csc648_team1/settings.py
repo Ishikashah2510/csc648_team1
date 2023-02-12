@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'csc648_team1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'team1_database',
+        'USER': 'adminuser',
+        'PASSWORD': 'burritoman2023#',
+        'HOST': 'csc648-db-team-1.cp7px58ibcuh.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
