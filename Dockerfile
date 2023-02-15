@@ -6,9 +6,9 @@ RUN pip install --upgrade pip --no-cache-dir
 
 RUN pip install -r requirements.txt --no-cache-dir
 
-RUN sudo apt update
+CMD ["sudo", "apt", "update"]
 
-RUN sudo apt install nodejs npm
+CMD ["sudo", "apt", "install", "nodejs", "npm"]
 
 #CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
 
