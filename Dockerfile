@@ -12,7 +12,7 @@ CMD ["sudo", "apt", "install", "nodejs", "npm"]
 
 WORKDIR /csc648_team1/csc648_team/my-app
 
-RUN npm install
+CMD ["npm", "install"]
 
 WORKDIR /app
 
