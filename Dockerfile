@@ -10,6 +10,10 @@ CMD ["sudo", "apt", "update"]
 
 CMD ["sudo", "apt", "install", "nodejs", "npm"]
 
+WORKDIR /csc648_team1/csc648_team/my-app
+
+RUN npm install
+
 #CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
 
 CMD ["gunicorn", "csc648_team1.wsgi:application", "--bind", "0.0.0.0:8000", "--timeout", "90"]
