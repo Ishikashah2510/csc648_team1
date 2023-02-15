@@ -6,4 +6,4 @@ from .models import *
 
 def render_about(request):
     details = get_about_details()
-    return render(request, 'home.html', {'details': details})
+    return render(request, 'index.html')
