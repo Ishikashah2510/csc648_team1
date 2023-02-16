@@ -1,5 +1,5 @@
 FROM python:3.8.13-slim-buster
-WORKDIR /app
+WORKDIR /app_ecs
 COPY ./ ./
 
 RUN pip install --upgrade pip --no-cache-dir
@@ -16,7 +16,7 @@ CMD ["npm", "install"]
 #CMD ["npm", "install", "react-scripts", "--save"]
 #CMD ["npm", "run", "build"]
 
-WORKDIR /app
+WORKDIR /app_ecs
 
 CMD ["python3", "manage.py", "collectstatic"]
 
