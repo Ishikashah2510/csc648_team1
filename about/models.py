@@ -15,4 +15,5 @@ def get_about_details():
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM about_developers')
     details = cursor.fetchall()
+    conn.close()
     return details

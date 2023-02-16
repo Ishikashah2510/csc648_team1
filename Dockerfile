@@ -14,12 +14,12 @@ WORKDIR /csc648_team1/csc648_team/my-app
 
 CMD ["npm", "install"]
 #CMD ["npm", "install", "react-scripts", "--save"]
-#CMD ["react-scripts", "build"]
+#CMD ["npm", "run", "build"]
 
 WORKDIR /app
 
 CMD ["python3", "manage.py", "collectstatic"]
 
-CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
+#CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
 
-#CMD ["gunicorn", "csc648_team1.wsgi:application", "--bind", "0.0.0.0:8000", "--timeout", "90"]
+CMD ["gunicorn", "csc648_team1.wsgi:application", "--bind", "0.0.0.0:8000", "--timeout", "90"]

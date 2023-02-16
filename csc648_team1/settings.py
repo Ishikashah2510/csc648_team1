@@ -58,7 +58,7 @@ ROOT_URLCONF = 'csc648_team1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'csc648_team1/my-app/public')]
+        'DIRS': [os.path.join(BASE_DIR, 'csc648_team1/my-app/build')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -127,8 +127,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'csc648_team1/my-app/src'),
-    os.path.join(BASE_DIR, 'csc648_team1/my-app/public')
+    os.path.join(BASE_DIR, 'csc648_team1/my-app/build/static')
 ]
 
 # Default primary key field type
