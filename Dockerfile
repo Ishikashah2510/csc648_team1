@@ -2,8 +2,6 @@ FROM python:3.8.13-slim-buster
 WORKDIR /app
 COPY ./ ./
 
-RUN ls
-
 RUN pip install --upgrade pip --no-cache-dir
 
 RUN pip install -r requirements.txt --no-cache-dir
