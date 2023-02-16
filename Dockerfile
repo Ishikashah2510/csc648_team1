@@ -12,11 +12,11 @@ CMD ["sudo", "apt", "update"]
 
 CMD ["sudo", "apt", "install", "nodejs", "npm"]
 
-WORKDIR /csc648_team1/csc648_team/my-app
+WORKDIR /csc648_team1/csc648_team1/my-app
 
 CMD ["npm", "install"]
 #CMD ["npm", "install", "react-scripts", "--save"]
-#CMD ["npm", "run", "build"]
+CMD ["npm", "run", "build"]
 
 WORKDIR /app
 
