@@ -7,5 +7,5 @@ import logging
 
 
 def render_about(request):
-    details = get_about_details()
+    # details = get_about_details()
     return render(request, 'index.html')
