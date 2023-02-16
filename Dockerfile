@@ -18,6 +18,8 @@ CMD ["npm", "install"]
 
 WORKDIR /app
 
+RUN  ls csc648_team1/my-app/build/static/css
+
 CMD ["python3", "manage.py", "collectstatic"]
 
 CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
