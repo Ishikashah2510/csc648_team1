@@ -126,7 +126,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'csc648_team1/my-app/build/static')
+    os.path.join(BASE_DIR, 'csc648_team1/my-app/build/static/')
 ]
 
 # Default primary key field type
