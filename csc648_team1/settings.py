@@ -125,8 +125,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'csc648_team1/my-app/build/static/css'),
-    os.path.join(BASE_DIR, 'csc648_team1/my-app/build/static/js'),
+    os.path.join(BASE_DIR, 'csc648_team1/my-app/build/static/css/'),
+    os.path.join(BASE_DIR, 'csc648_team1/my-app/build/static/js/'),
 ]
 
 MEDIA_URL = '/media/'
